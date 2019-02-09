@@ -105,3 +105,4 @@ ENV/
 
 # PyCharm
 .idea
+.vscode/launch.json

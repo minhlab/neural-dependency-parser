@@ -269,6 +269,8 @@ class ParserModel(Model):
         if FLAGS.activation == 'cube':
             # cube activation function
             h = tf.pow(x, tf.constant(3, dtype=tf.float32))
+        elif FLAGS.activation == 'normal':
+            h = tf.exp(-x*x/2)
         else:
             h = tf.nn.relu(x)
 
